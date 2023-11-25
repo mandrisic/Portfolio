@@ -1,0 +1,234 @@
+.main {
+    align-items: center;
+    padding: 10em;
+}
+
+.main h1 {
+    font-family: "Caudex";
+    font-size: 10rem;
+    font-weight: lighter;
+}
+
+.wrapper {
+    margin-top: -14.7em;
+    margin-left: 7.5em;
+    padding: 0;
+}
+
+.title_wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.ellipse {
+    position: absolute;
+    z-index: 1;
+    height: 8.5em;
+    width: 35em;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: none;
+    transform: skew(15deg, 15deg);
+    top: 30px;
+    left: -30px;
+}
+
+.btn {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin-top: 1.5em;
+    border: 1px solid white;
+    border-radius: 2em;
+    max-width: fit-content;
+    padding: .6em;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.btn_wrap {
+    justify-content: center;
+}
+
+#short_bio, #education, #abilities, #work {
+    align-items: center;
+    padding-left: 15em;
+    background-color: rgb(101, 156, 156);
+}
+
+#education {
+    background-color: rgb(11, 61, 61);
+}
+
+#work {
+    background-color: rgb(8, 86, 86);
+}
+
+#abilities {
+    background-color: rgb(21, 134, 134);
+}
+
+.title_description {
+    margin-top: 2em;
+}
+
+.menu_title h1 {
+    font-family: "Caudex";
+    font-weight: lighter;
+    font-size: 5rem;
+}
+
+.menu_title h2 {
+    font-family: "Caudex";
+    font-weight: lighter;
+    font-size: 2rem;
+    margin: 2em auto;
+}
+
+.title_description p {
+    font-family: "Poppins";
+    font-weight: lighter;
+    font-size: 1.6rem;
+    width: 38em;
+    text-align: justify;
+    color: rgba(231, 251, 245, 0.748);
+}
+
+.title_description ul {
+    list-style-type: none;
+    padding: 2em 2em 2em 0em;
+}
+
+.title_description ul li {
+    font-size: 1.8rem;
+    font-family: "Poppins";
+    font-weight: lighter;
+    color: rgba(231, 251, 245, 0.748);
+}
+
+.work_timeline {
+    display: flex;
+}
+
+.paid_work ul li i, .volonter_work ul li i {
+    color: rgba(127, 255, 212, 0.542);
+}
+
+.paid_work ul li, .volonter_work ul li {
+    font-size: 1.5rem;
+    color: rgba(231, 251, 245, 0.748);
+}
+
+.paid_work {
+    margin-right: 3em;
+}
+
+.title_description img {
+    width: 4em;
+    margin-right: 1em;
+}
+
+@media (max-width: 426px) {
+
+    .main h1 {
+        font-size: 6rem;
+        margin-top: 1em;
+    }
+
+    .wrapper {
+        margin-top: -22.2em;
+        margin-left: 0em;
+    }
+
+    .ellipse {
+        height: 5em;
+        width: 20em;
+        top: 8em;
+        left: -5px;
+        opacity: 50%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 8em;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+    }
+
+    .btn_wrap {
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+    }
+
+    .btn {
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        margin-top: 1em;
+        font-size: 1.5rem;
+        border-radius: 2em;
+        border: none;
+        padding: .8em;
+        filter: drop-shadow(6px 5px 6px #383838);
+        background: rgb(123,171,171);
+        background: linear-gradient(90deg, rgba(123,171,171,1) 0%, rgba(34,75,75,1) 100%);
+    }  
+
+    .container {
+        margin: 2em auto;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #short_bio, #education, #abilities, #work {
+        display: flex;
+        flex-direction: column;
+        padding: 5em;
+        align-items: center ;
+        align-content: center;
+        align-self: center;
+    }
+
+    .menu_title h1 {
+        font-size: 3rem;
+    }
+    
+    .menu_title h2 {
+        font-size: 1.5rem;
+        margin: 2em auto;
+    }
+    
+    .title_description p {
+        font-size: 1.4rem;
+        width: fit-content;
+    }
+
+    .title_description ul {
+        padding: 1em 0em 1em 0em;
+    }
+    
+    .title_description ul li {
+        font-size: 1.4rem;
+    }
+    
+    .work_timeline {
+        flex-direction: column;
+    }
+
+    .paid_work ul li, .volonter_work ul li{
+        font-size: 1.3rem;
+    }
+
+    .title_description img {
+        width: 4em;
+        margin-right: 2em;
+        margin-top: 1em;
+    }
+
+}

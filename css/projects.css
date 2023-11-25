@@ -1,0 +1,312 @@
+body {
+    background: rgb(123,171,171);
+    background: linear-gradient(90deg, rgba(123,171,171,1) 0%, rgba(34,75,75,1) 100%);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10em;
+}
+
+.page {
+    height: 100vh;
+}
+
+.main h1 {
+    font-family: "Caudex";
+    font-size: 10rem;
+    font-weight: lighter;
+}
+
+.title_wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.ellipse {
+    position: absolute;
+    z-index: 1;
+    height: 8.5em;
+    width: 35em;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: none;
+    transform: skew(15deg, 15deg);
+    top: 30px;
+    left: -30px;
+}
+
+.btn {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 2em;
+    max-width: fit-content;
+    padding: .6em;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.btn_wrap {
+    justify-content: center;
+}
+
+.project_container_1, .project_container_2, .project_container_3, .project_container_4, .project_container_5 {
+    display: flex;
+    padding: 5em;
+    align-items: center;
+    background: rgb(129,183,183);
+    background: linear-gradient(90deg, rgba(129,183,183,1) 0%, rgba(5,46,46,0.6) 100%);
+    border-radius: 5em;
+    margin: 5em 10em;
+    height: 44em;
+    filter: drop-shadow(9px 8px 9px #383838);
+    justify-content: space-around;
+}
+
+.project_container_2, .project_container_4 {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.bio_project h3, .bio_project_2 h3, .bio_project_3 h3, .bio_project_4 h3, .bio_project_5 h3 {
+    font-family: "Caudex";
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.bio_project_3, .bio_project_4, .bio_project_5 {
+    padding: 5em;
+}
+
+.bio_project p, .bio_project_2 p, .bio_project_3 p, .bio_project_3 i, .bio_project_4 p, .bio_project_5 p {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #AAFFFF;
+    margin: 1em auto;
+    text-align: justify;
+    width: 25em;
+}
+
+.bio_project h4, .bio_project_2 h4, .bio_project_3 h4, .bio_project_4 h4, .bio_project_5 h4  {
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    font-weight: lighter;
+    padding: .5em;
+    margin-top: .2em;
+}
+
+.bio_project_2 h4, .bio_project_2 h3, .bio_project_4 h4, .bio_project_4 h3  {
+    text-align: right;
+}
+
+.project_links, .project_links_2 {
+    display: flex;
+}
+
+.project_links_2 {
+    float: right;
+}
+
+.project_links a, .project_links_2 a {
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #0d2e2e;
+}
+
+.project_links div, .project_links_2 div {
+    background-color: #56D0D0;
+    padding: 1em;
+    border-radius: 5em;
+    margin-right: 1em;
+    margin-top: 2em;
+    text-align: center;
+    width: 10em;
+}
+
+.project_image img {
+    height: 55em;
+    margin-bottom: 2em;
+}
+
+.project_image_2 img {
+    height: 55em;
+    margin-bottom: 4em;
+}
+
+.project_image_3 img {
+    height: 58em;
+    margin-bottom: -3em;
+}
+
+.project_image_4 img {
+    height: 48em;
+    margin-left: -2em;
+}
+
+.project_image_5 img {
+    height: 55em;
+}
+
+.last {
+    height: 2em;
+}
+
+@media (max-width: 426px) {
+
+    .main h1 {
+        font-size: 6rem;
+        margin-top: 1em;
+    }
+
+    .ellipse {
+        height: 5em;
+        width: 20em;
+        top: 8em;
+        left: -15px;
+        opacity: 50%;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 8em;
+    }
+
+    .btn {
+        margin-top: 1.5em;
+        font-size: 1.5rem;
+        border-radius: 2em;
+        border: none;
+        padding: .8em;
+        filter: drop-shadow(6px 5px 6px #383838);
+        background: rgb(123,171,171);
+        background: linear-gradient(90deg, rgba(123,171,171,1) 0%, rgba(34,75,75,1) 100%);
+    }
+
+    .project_container_1, .project_container_2, .project_container_3, .project_container_4, .project_container_5 {
+        flex-direction: column-reverse;
+        padding: 2.5em;
+        margin: .5em 2em;
+        height: 90em;
+        align-items: center;
+        background: rgb(129,183,183);
+        background: linear-gradient(90deg, rgba(129,183,183,1) 0%, rgba(5,46,46,0.6) 100%);
+        border-radius: 5em;
+        filter: drop-shadow(9px 8px 9px #383838);
+    }
+    
+    .project_container_2 {
+        flex-direction: column;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        height: 95em;
+    }
+
+    .project_container_3 {
+        height: 88em;
+    }
+
+    .project_container_4 {
+        flex-direction: column;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        height: 84em;
+    }
+
+    .project_container_5 {
+        height: 82em;
+    }
+
+    .bio_project h3, .bio_project_2 h3, .bio_project_3 h3, .bio_project_4 h3, .bio_project_5 h3 {
+        font-size: 2.2rem;
+        padding: .5em;
+        text-align: center;
+    }
+
+    .bio_project {
+        margin-bottom: 3em;
+    }
+
+    .bio_project_2 {
+        margin-top: -10em;
+    }
+
+    .bio_project_3 {
+        margin-top: 1em;
+        margin-bottom: -1em;
+    }
+
+    .bio_project_4 {
+        padding: 2.5em;
+        margin-top: -5em;
+    }
+
+    .bio_project_5 {
+        padding: 2.5em;
+        margin-top: -3em;
+    }
+    
+    .bio_project p, .bio_project_2 p, .bio_project_3 p, .bio_project_3 i, .bio_project_4 p, .bio_project_5 p {
+        font-size: 1.5rem;
+        margin: 1em auto;
+        width: 18em;
+    }
+
+    .bio_project h4, .bio_project_2 h4, .bio_project_3 h4, .bio_project_4 h4, .bio_project_5 h4 {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: .5em;
+        margin-top: .2em;
+    }
+
+    .project_links, .project_links_2 {
+        justify-content: center;
+    }
+    
+    .project_links_2 {
+        float: none;
+    }
+    
+    .project_links a, .project_links_2 a {
+        font-size: 1.5rem;
+    }
+
+    .project_image img {
+        height: 50em;
+        margin-bottom: -2em;
+    }
+    
+    .project_image_2 img {
+        height: 50em;
+        margin-top: -5em;
+    }
+
+    .project_image_3 img {
+        height: 52em;
+        margin-bottom: -12em;
+    }
+
+    .project_image_4 img {
+        height: 42em;
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+    
+    .project_image_5 img {
+        height: 45em;
+        margin-top: -5em;
+    }
+    
+    .last {
+        height: 5em;
+    }
+
+  }   
